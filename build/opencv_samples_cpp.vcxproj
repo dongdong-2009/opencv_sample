@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E2746CFF-FA15-33D0-9069-85448B166142}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_samples_cpp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\cmake\bin\cmake.exe" -HE:/OpenCV/opencv_cpp_sample/cpp -BE:/OpenCV/opencv_cpp_sample/build --check-stamp-file E:/OpenCV/opencv_cpp_sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\cmake\bin\cmake.exe" -HE:/OpenCV/opencv_cpp_sample/cpp -BE:/OpenCV/opencv_cpp_sample/build --check-stamp-file E:/OpenCV/opencv_cpp_sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\cmake\bin\cmake.exe" -HE:/OpenCV/opencv_cpp_sample/cpp -BE:/OpenCV/opencv_cpp_sample/build --check-stamp-file E:/OpenCV/opencv_cpp_sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\cmake\bin\cmake.exe" -HE:/OpenCV/opencv_cpp_sample/cpp -BE:/OpenCV/opencv_cpp_sample/build --check-stamp-file E:/OpenCV/opencv_cpp_sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/OpenCV/opencv_cpp_sample/cpp/CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\cmake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\OpenCV\opencv_cpp_sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\ZERO_CHECK.vcxproj">
+      <Project>{EDFDA23C-0894-3678-9338-F076AEBFE9C4}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_3calibration.vcxproj">
+      <Project>{C14D4033-E385-3A87-9BEB-2176BCC2DA87}</Project>
+      <Name>example_cpp_3calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_application_trace.vcxproj">
+      <Project>{B1F12291-FCFC-3D3E-8DB8-F7C1E0427557}</Project>
+      <Name>example_cpp_application_trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_autofocus.vcxproj">
+      <Project>{2BAF9132-0764-3F8E-AE64-2280924C0337}</Project>
+      <Name>example_cpp_autofocus</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_bgfg_segm.vcxproj">
+      <Project>{0CC4F71B-8A23-3345-B7DA-0C2EC5877EB7}</Project>
+      <Name>example_cpp_bgfg_segm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_calibration.vcxproj">
+      <Project>{F1B93DAF-66DB-3392-A2A7-008B11B56FB5}</Project>
+      <Name>example_cpp_calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_camshiftdemo.vcxproj">
+      <Project>{0C80C3B9-0FF5-39F8-A74C-DC0D83118984}</Project>
+      <Name>example_cpp_camshiftdemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_cloning_demo.vcxproj">
+      <Project>{D304939B-C45C-37E6-BFC2-447B083CDDCC}</Project>
+      <Name>example_cpp_cloning_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_cloning_gui.vcxproj">
+      <Project>{0EB4FF4F-0628-3E58-8FFE-131351181707}</Project>
+      <Name>example_cpp_cloning_gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_connected_components.vcxproj">
+      <Project>{868C0375-6D41-33A7-BFA3-F6B9DDE55339}</Project>
+      <Name>example_cpp_connected_components</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_contours2.vcxproj">
+      <Project>{EF8394B1-5E2F-39BA-94FA-B0A0E29AD013}</Project>
+      <Name>example_cpp_contours2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_convexhull.vcxproj">
+      <Project>{856A11B9-7A4F-3955-975D-AC5ECE4824CC}</Project>
+      <Name>example_cpp_convexhull</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_cout_mat.vcxproj">
+      <Project>{6C0EAA63-361D-38FC-8466-8ABD64583117}</Project>
+      <Name>example_cpp_cout_mat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_create_mask.vcxproj">
+      <Project>{1068AACA-0E6D-3DF7-8FBD-A1D386029B30}</Project>
+      <Name>example_cpp_create_mask</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_dbt_face_detection.vcxproj">
+      <Project>{4CA129A3-E286-3685-8E77-99947F4FEBDC}</Project>
+      <Name>example_cpp_dbt_face_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_delaunay2.vcxproj">
+      <Project>{7B30D43D-E7AC-35C2-BB4B-E738C0375814}</Project>
+      <Name>example_cpp_delaunay2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_demhist.vcxproj">
+      <Project>{814DDF31-C4D4-360D-B2A6-2CE206FB6698}</Project>
+      <Name>example_cpp_demhist</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_detect_blob.vcxproj">
+      <Project>{CBD8CA37-F445-308B-9E9E-9579D319C910}</Project>
+      <Name>example_cpp_detect_blob</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_detect_mser.vcxproj">
+      <Project>{BDD75F34-7FD9-3DD3-8238-F5B3B7A1C28A}</Project>
+      <Name>example_cpp_detect_mser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_dft.vcxproj">
+      <Project>{66002297-A331-3925-B9F8-89D81B178461}</Project>
+      <Name>example_cpp_dft</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_distrans.vcxproj">
+      <Project>{2F5D01CC-81EC-3334-9BED-1CBBCE67DA00}</Project>
+      <Name>example_cpp_distrans</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_drawing.vcxproj">
+      <Project>{579D0704-8BE5-3357-8B35-EE6673BFC8CB}</Project>
+      <Name>example_cpp_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_edge.vcxproj">
+      <Project>{8D87CD80-2748-3295-9845-A1F5D08105A6}</Project>
+      <Name>example_cpp_edge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_em.vcxproj">
+      <Project>{E39CBD19-9A81-3CBD-9ED9-53F737D12ED8}</Project>
+      <Name>example_cpp_em</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_facedetect.vcxproj">
+      <Project>{39D74F8A-D0A2-3C2E-977A-3EC914D059FE}</Project>
+      <Name>example_cpp_facedetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_facial_features.vcxproj">
+      <Project>{1FBCD275-4DDE-3C31-8C34-15DE39205313}</Project>
+      <Name>example_cpp_facial_features</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_falsecolor.vcxproj">
+      <Project>{2B5FB47F-0E07-3602-A55C-BBC24C816867}</Project>
+      <Name>example_cpp_falsecolor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_fback.vcxproj">
+      <Project>{647329B1-201D-3CC8-9F0E-BC0EE71D14DD}</Project>
+      <Name>example_cpp_fback</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_ffilldemo.vcxproj">
+      <Project>{6DA6AFA7-3FB2-3FFD-8150-B50794718D67}</Project>
+      <Name>example_cpp_ffilldemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_filestorage.vcxproj">
+      <Project>{21D3CA17-166A-32A0-A05F-EE10F186271F}</Project>
+      <Name>example_cpp_filestorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_fitellipse.vcxproj">
+      <Project>{28BF6E1A-282E-3201-A2EA-57EDE9527C80}</Project>
+      <Name>example_cpp_fitellipse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_grabcut.vcxproj">
+      <Project>{20D1D990-3A87-30AD-A644-0D88318848FE}</Project>
+      <Name>example_cpp_grabcut</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_gstreamer_pipeline.vcxproj">
+      <Project>{7314E7BA-13F8-3468-BC09-73B2CD0CC4F1}</Project>
+      <Name>example_cpp_gstreamer_pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_image.vcxproj">
+      <Project>{8D3F1A79-00A7-341C-A8FD-4F8FE5A922D8}</Project>
+      <Name>example_cpp_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_image_alignment.vcxproj">
+      <Project>{7DE8F99C-1A44-3E7A-9443-F29D2DBF1E96}</Project>
+      <Name>example_cpp_image_alignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_image_sequence.vcxproj">
+      <Project>{9222207A-A7B6-327D-A50D-ECA4EE12BBCF}</Project>
+      <Name>example_cpp_image_sequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_imagelist_creator.vcxproj">
+      <Project>{0BBAF640-8676-3FD1-9D21-38E0B35633A9}</Project>
+      <Name>example_cpp_imagelist_creator</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_inpaint.vcxproj">
+      <Project>{EB056F8A-DE29-3C87-ADDD-16FAC3C71F0D}</Project>
+      <Name>example_cpp_inpaint</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_intelperc_capture.vcxproj">
+      <Project>{176F208D-662D-3321-9A73-96B7186BDB01}</Project>
+      <Name>example_cpp_intelperc_capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_kalman.vcxproj">
+      <Project>{80E85113-0775-371D-85BB-AEFF7527F99F}</Project>
+      <Name>example_cpp_kalman</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_kmeans.vcxproj">
+      <Project>{7D38ED8E-683F-3E8C-9908-F3199CC3F618}</Project>
+      <Name>example_cpp_kmeans</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_laplace.vcxproj">
+      <Project>{9B084D5E-21BE-336A-ACB2-BA3992F49BCA}</Project>
+      <Name>example_cpp_laplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_letter_recog.vcxproj">
+      <Project>{C9FD5E4E-BE6F-3CE9-BCEF-6C3445C66FDB}</Project>
+      <Name>example_cpp_letter_recog</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_lkdemo.vcxproj">
+      <Project>{C18811A4-CD93-3699-8A0A-7262CFB8ED67}</Project>
+      <Name>example_cpp_lkdemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_logistic_regression.vcxproj">
+      <Project>{C0EAAE80-70E1-3836-BF7D-90D552F278A1}</Project>
+      <Name>example_cpp_logistic_regression</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_lsd_lines.vcxproj">
+      <Project>{778E8FCF-28F3-3E31-8577-FD5939B3E175}</Project>
+      <Name>example_cpp_lsd_lines</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_mask_tmpl.vcxproj">
+      <Project>{1C4D06C5-5C5E-352B-823F-42FFDD0712BD}</Project>
+      <Name>example_cpp_mask_tmpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_matchmethod_orb_akaze_brisk.vcxproj">
+      <Project>{8DA9A848-F16C-37DF-AE58-72CB8A67E16D}</Project>
+      <Name>example_cpp_matchmethod_orb_akaze_brisk</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_minarea.vcxproj">
+      <Project>{42E229D2-CE20-312D-B6B7-18D83E19C5E1}</Project>
+      <Name>example_cpp_minarea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_morphology2.vcxproj">
+      <Project>{F39EEB32-6D63-3EE0-B56A-91178F9C10FF}</Project>
+      <Name>example_cpp_morphology2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_neural_network.vcxproj">
+      <Project>{B515AB1A-4702-3D7D-8CF4-5D031D8EB0E1}</Project>
+      <Name>example_cpp_neural_network</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_npr_demo.vcxproj">
+      <Project>{0B21F2E5-E9C1-378E-B073-44DF9F6801E3}</Project>
+      <Name>example_cpp_npr_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_opencv_version.vcxproj">
+      <Project>{94A8EE96-1E16-33C4-8F95-9F6D4C7AF406}</Project>
+      <Name>example_cpp_opencv_version</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_openni_capture.vcxproj">
+      <Project>{187776E5-9268-3C9F-9D55-BFA3AF7CB202}</Project>
+      <Name>example_cpp_openni_capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_pca.vcxproj">
+      <Project>{FF729209-AD8E-392F-A7AF-D031F2DDB7A3}</Project>
+      <Name>example_cpp_pca</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_peopledetect.vcxproj">
+      <Project>{BF11DC5D-6393-309B-8C4F-AC0F0B16CACA}</Project>
+      <Name>example_cpp_peopledetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_phase_corr.vcxproj">
+      <Project>{74EEB469-9982-3EE7-A630-62031B83584D}</Project>
+      <Name>example_cpp_phase_corr</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_points_classifier.vcxproj">
+      <Project>{82521C6D-513E-300F-98B2-5FA39940871D}</Project>
+      <Name>example_cpp_points_classifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_polar_transforms.vcxproj">
+      <Project>{DA635F39-2579-328F-A3DD-54CFBC4B34E2}</Project>
+      <Name>example_cpp_polar_transforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_segment_objects.vcxproj">
+      <Project>{D7F8CF5A-E6FF-3017-8A74-A011A8A17483}</Project>
+      <Name>example_cpp_segment_objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_select3dobj.vcxproj">
+      <Project>{23D50B45-96AA-3EFA-879E-B604FF923002}</Project>
+      <Name>example_cpp_select3dobj</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_shape_example.vcxproj">
+      <Project>{69EB2B53-46B1-3091-93BD-F19955BEFE35}</Project>
+      <Name>example_cpp_shape_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_smiledetect.vcxproj">
+      <Project>{AED362DA-A586-325B-9DC9-671762D9B80D}</Project>
+      <Name>example_cpp_smiledetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_squares.vcxproj">
+      <Project>{47F738B7-18B4-39DE-90F0-F4C2DAA63EDF}</Project>
+      <Name>example_cpp_squares</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_starter_imagelist.vcxproj">
+      <Project>{8C1F65D0-3B6A-3AEE-9507-F08BFD97F526}</Project>
+      <Name>example_cpp_starter_imagelist</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_stereo_calib.vcxproj">
+      <Project>{894CD073-B09A-3B59-814D-82954CB3D9D8}</Project>
+      <Name>example_cpp_stereo_calib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_stereo_match.vcxproj">
+      <Project>{E248FFF7-EE32-3241-A311-EF99D7E63557}</Project>
+      <Name>example_cpp_stereo_match</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_stitching.vcxproj">
+      <Project>{E09231C0-3A92-3E97-B323-A08FB8CBFA42}</Project>
+      <Name>example_cpp_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_stitching_detailed.vcxproj">
+      <Project>{10B72E8C-B73F-38F3-A1E2-6186B8992E99}</Project>
+      <Name>example_cpp_stitching_detailed</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_train_HOG.vcxproj">
+      <Project>{ADEC21B1-09F4-30CA-B306-2AC4BF3ABD3D}</Project>
+      <Name>example_cpp_train_HOG</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_train_svmsgd.vcxproj">
+      <Project>{48016060-BED6-3F33-8586-C270524D9577}</Project>
+      <Name>example_cpp_train_svmsgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_travelsalesman.vcxproj">
+      <Project>{3DF9C66A-F430-35BD-B83D-DC69CCC0C740}</Project>
+      <Name>example_cpp_travelsalesman</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_tree_engine.vcxproj">
+      <Project>{E2AF0B95-DBD3-3973-8B8C-EDA541D290C2}</Project>
+      <Name>example_cpp_tree_engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_tvl1_optical_flow.vcxproj">
+      <Project>{03F01F6E-AB45-34BC-A381-459EC44A1394}</Project>
+      <Name>example_cpp_tvl1_optical_flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_videocapture_basic.vcxproj">
+      <Project>{1A89438B-FCD5-3A5B-AF6E-57B92FDB49BE}</Project>
+      <Name>example_cpp_videocapture_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_videocapture_starter.vcxproj">
+      <Project>{B6146FDA-45AD-3C28-91B6-D071D1616DEF}</Project>
+      <Name>example_cpp_videocapture_starter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_videostab.vcxproj">
+      <Project>{3C8A69AD-6AB0-3238-A0EC-5DF721D21CE3}</Project>
+      <Name>example_cpp_videostab</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_videowriter_basic.vcxproj">
+      <Project>{FF77791A-A7DF-368B-B0F4-6704944ED30D}</Project>
+      <Name>example_cpp_videowriter_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_warpPerspective_demo.vcxproj">
+      <Project>{68A6787E-4F54-37FF-842C-8A9379911C37}</Project>
+      <Name>example_cpp_warpPerspective_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OpenCV\opencv_cpp_sample\build\example_cpp_watershed.vcxproj">
+      <Project>{F9E3086E-D229-3FAD-A79B-BE657647A7F8}</Project>
+      <Name>example_cpp_watershed</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

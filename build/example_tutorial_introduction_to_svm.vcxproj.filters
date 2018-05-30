@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\OpenCV\opencv_cpp_sample\cpp\tutorial_code\ml\introduction_to_svm\introduction_to_svm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\OpenCV\opencv_cpp_sample\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{48AEB7F6-ED73-35D5-B282-7C161B7B4E16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
